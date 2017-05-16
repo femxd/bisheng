@@ -109,7 +109,7 @@ exports.build = function build(program, callback) {
     configFile,
     bishengConfig.theme,
     entryName,
-    bishengConfig.root,
+    '/',
   );
   const webpackConfig = updateWebpackConfig(getWebpackCommonConfig({ cwd: process.cwd() }));
   webpackConfig.UglifyJsPluginConfig = {
